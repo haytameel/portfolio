@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Rubik, sans-serif;
+    scroll-behavior: smooth;
+    background-color: #081b29;
+    color: #ededee;
+}
+
+.navbar a{
+    font-family: Rubik-bold, sans-serif;
+    justify-content: space-around;
+    font-style: normal;
+    text-decoration: none;
+    padding-right: 4px;
+}
+.navbar a:hover {
+    color: #00abf0;
+    transition: 0.5s;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url(../fonts/Rubik/static/Rubik-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Rubik-bold";
+    src: url(../fonts/Rubik/static/Rubik-Bold.ttf) format('truetype');
+}
+
+.header {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+
+}
+
+.nombre {
+    font-family: Rubik-bold, sans-serif;
+}
+
+.navbar {
+    font-size: 16px;
+}
+
+/*Cuando la panralla tenga un ancho menor de 500px la letra será disminuida*/
+@media (max-width: 500px) {
+    .navbar a {
+        font-size: 10px;
+    }
+}
+/*Cuando la panralla tenga un ancho menor de 500px las banderas se harán ams pequeñas*/
+@media (max-width: 500px) {
+    .idiomas {
+        transform: scale(0.8);
+    }
+}
+
+.idiomas img {
+    padding-right: 4px;
+}
+.idiomas img:HOVER {
+transform: scale(1.2);
+}
+
+.inicio {
+    padding-top: 10vh;
+    height: 90vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+h1 {
+    font-size: 70px;
+    margin: 10px;
+    font-family: Rubik-bold, sans-serif;
+    text-align: center;
+
+
+}
+
+h3 {
+    margin: 10px;
+    font-size: 28px;
+    text-align: center;
+    color: #00abf0;
+}
+
+.inicio p {
+    margin: 10px;
+    text-align: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    max-width: 800px;
+
+
+}
+
+.redes {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin: 10px;
+
+}
+
+.redes a {
+    margin-right: 10px;
+    
+}
+
+.imagen-contenedor img{
+    border: #00abf0 solid 4px;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    overflow:visible;
+}
+
+.imagen-contenedor img:hover{
+    background-color: #00abf0;
+    transition: 0.6s;
+}
+
+
+
+/*TITULOS*/
+h2 {
+
+    font-family: rubik-bold;
+    font-size: 48px;
+    text-align: center;
+
+}
+
+h2 span {
+    font-family: rubik-bold;
+    color:#00abf0;
+    font-size: 48px;
+
+}
+
+
+/*SOBRE MI*/
+
+.sobre-mi {
+    width: 100vw;
+    height: 90vh;
+
+}
+
+.sobre-mi {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+}
+
+.sobre-mi h2{
+    padding-top: 200px;
+}
+.sobre-mi p{
+    padding-top: 24px;
+    text-align: center;
+    margin: auto;
+    max-width: 60%;
+    font-size: 18px;
+}
+@media (max-width: 500px) {
+    .sobre-mi p {
+        max-width: 90%;
+    }
+}
+
+
+
+.proyectos{
+    width: 100vw;
+    height: 90vh;
+    padding-top: 120px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    display: block;
+    flex-direction: row;
+
+
+}
+.projects{
+    align-items: center;
+
+}
+.projects .caja{
+    display: inline-block;
+    max-width: 30%;
+    margin: 5px;
+    margin-bottom: 40px;
+    border: #00abf0 6px solid ;
+    border-radius: 10px;
+
+
+    
+}
+
+/*EVITAR QUE LA IMAGEN SE SALGA DEL CONTENEDOR*/
+.projects .caja img{
+max-width: 100%;
+height: auto;
+}
+.projects .caja h4{
+    max-width: 100%;
+    height: auto;
+}
+
+
+/**/
+.contacto{
+    margin-top:180px ;
+    height: 90vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: block;
+}
+.contacto h2{
+    padding-top: 40px;
+    padding-bottom: 24px;
+}
+
+@media (max-width: 710px) {
+    .contacto {
+        margin-top: 800px;
+    }
+}
+@media (max-width: 500px) {
+    .contacto {
+        margin-top: 1600px;
+    }
+}
+@media (max-height: 1500px) {
+    .contacto {
+        margin-top: 600px;
+    }
+}
+
+
+
+
+
+.contacto input{
+    border:#00abf0 solid 2px;
+    border-radius: 4px;
+    text-align: center;
+    margin: 3px;
+    height: 30px;
+    width: 220px;
+
+
+}
+textarea{
+    border:#00abf0 solid 2px;
+    border-radius: 4px;
+    text-align: left;
+    padding-left: 12px;
+    padding-top: 12px;
+    margin: 5px;
+    width: 420px;
+
+}
+
+.boton{
+    border:#00abf0 solid 2px;
+    border-radius: 4px;
+    width: 140px;
+    height: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+    font-family: Rubik-bold,sans-serif;
+    font-size: 16px;
+}
+
+/*EFECTO DEL BOTON*/
+.boton {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #081b29;
+    border: 2px solid #00abf0;
+    background-color: #00abf0;
+    transition: 0.5s;
+    
+}
+
+.boton:hover {
+    color: #ffffff;
+    border: 2px solid #00abf0;
+
+}
+
+
+.boton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #081b298f;
+    transition: width 0.6s ease-in-out;
+}
+
+.boton:hover::before {
+    width: 100%;
+
+}
+/*EFECTO DEL BOTON*/
+
+
+footer{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
