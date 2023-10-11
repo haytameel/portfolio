@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haytam</title>
-    <script src="js/script.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <title >Haytam.</title>
+    <link rel="stylesheet" href="css/estilo.css">
     <link rel="shortcut icon" href="img/icons8-portfolio-64 (2).png" type="image/x-icon">
-
+    <script src="js/script.js"></script>
 </head>
-
 <body>
     <header class="header">
-        <div style="font-family: rubik-bold; font-size: 34px"class="nombre">
-            Haytam.
+        <!-- Nombre -->
+        <div class="nombre">
+            <h2>Haytam<span>.</span></h2> 
         </div>
-
-        <div class="idiomas" id="idiomas">
+        
+        <!-- Idiomas -->
+        <div class="idiomas">
             <a href="index.html"><img lengua="es"src="img/espana.png" alt=""></a>
             <a href="english.html"><img lengua="en"src="img/reino-unido.png" alt=""></a>
             <a href="arabic.html"><img lengua="ar"src="img/arabia-saudita.png" alt=""></a>
         </div>
 
-        <div class="navegacion">
-            <nav class="navbar">
-                <a href="#inicio">Inicio</a>
-                <a href="#sobremi">Sobre mí</a>
-                <a href="#proyectos">Proyectos</a>
-                <a href="#skills">Skills</a>
-                <a href="#contacto">Contacto</a>
-            </nav>
-        </div>
+        <!-- Barra de navegacion -->
+        <button class="button">
+            <img width="32px" src="img/menu.png" alt="">
+        </button>
+        <nav class="nav">
+            <ul class="ul">
+                <li class="li"><a href="#inicio" class="a">Inicio</a></li>
+                <li class="li"><a href="#sobremi" class="a">Sobre mí</a></li>
+                <li class="li"><a href="#proyectos" class="a">Proyectos</a></li>
+                <li class="li"><a href="#contacto" class="a">Contacto</a></li>
+            </ul>
+        </nav>
 
     </header>
 
-
+    
     <section class="inicio" id="inicio">
         <div class="contenido_inicio">
             <h1>Hola, soy <br> Haytam El Harhari </h1>
@@ -47,25 +49,25 @@
                 molestias placeat.
                 LO QUE HAGO ES ESTUDIAR
                 ESTUDIARESTUDIO
-                Quas, consequatur placeat ratione nihil vero possimus fugiat cum maiores.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem soluta dolores repudiandae error
-                officiis, similique odio aut consectetur rerum distinctio laudantium excepturi molestias odit. Rerum
-                nisi a ullam ab ex.
+                
 
 
             </p>
 
             <div class="redes">
-                <a href="https://www.linkedin.com/in/haytameel"> <div class="imagen-contenedor"><img  src="img/icons8-linkedin-50.png" class="imagen" alt="In"></div></a>
-                <a href="mailto:haytameelharhari@gmail.com" class="gmail"><div class="imagen-contenedor"><img src="img/icons8-gmail-50.png" class="imagen" alt=""></div></a>
-                <a href="https://api.whatsapp.com/send?phone=34643152407" class="whatsapp"><div class="imagen-contenedor"><img src="img/icons8-whatsapp-50.png" class="imagen" alt=""></div></a>
+                <a href="https://www.linkedin.com/in/haytameel"> <div class="imagen-contenedor"><img height="50px";width="50px"; src="img/linkedin.png" class="imagen" alt="In"></div></a>
+                <a href="mailto:haytameelharhari@gmail.com" class="gmail"><div class="imagen-contenedor"><img height="50px";width="50px"; src="img/gmail.png" class="imagen" alt=""></div></a>
+                <a href="https://api.whatsapp.com/send?phone=34643152407" class="whatsapp"><div class="imagen-contenedor"><img height="50px";width="50px"; src="img/whatsapp.png" class="imagen" alt=""></div></a>
             </div>
         </div>
     </section>
 
+
+
+    
     <section class="sobre-mi" id="sobremi">
         <h2>Sobre <span>mí</span></h2>
-        <p style="padding-bottom: 10px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quidem et perferendis modi
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quidem et perferendis modi
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor amet quia atque quae accusantium? Blanditiis
             corrupti ab, quos voluptatem error officiis quam debitis repud
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sequi vel minima tempore quidem quos totam,
@@ -77,15 +79,19 @@
     </section>
 
 
+
+
+
+    
     <section class="proyectos" id="proyectos">
         <h2>Mi <span>Recorrido</span></h2>
         <div class="projects">
 
 
             <div class="caja">
-                <a href=""><img src="img/project.png" alt="" width="300" height="200"></a>
-                <h4>CALCULADORA</h4>
-                <h4>DD/MM/AAAA</h4>
+                <a href="https://haytameel.github.io/calculadora/" target="_blank"><img src="img/calculadora.png" alt="" width="160" height="100"></a>
+                <h4 class="titulo_proyecto">CALCULADORA</h4>
+                <h4 class="fecha">DD/MM/AAAA</h4>
                 <div class="lenguajes">
                     <img src="img/lenguajes/icons8-html-48.png" alt="">
                     <img src="img/lenguajes/icons8-css-48.png" alt="">
@@ -99,76 +105,81 @@
 
 
             <div class="caja">
-                <a href=""><img src="img/project.png" alt="" width="300" height="200"></a>
-                <h4>PROYECTO</h4>
-                <H4>DD/MM/AAAA</H4>
+                <a href=""><img src="img/project.png" alt="" width="160" height="100"></a>
+                <h4 class="titulo_proyecto">PROYECTO</h4>
+                <H4 class="fecha">DD/MM/AAAA</H4>
                 <div class="lenguajes">
                     <img src="img/lenguajes/icons8-html-48.png" alt="">
                     <img src="img/lenguajes/icons8-css-48.png" alt="">
                     <img src="img/lenguajes/icons8-javascript-48.png" alt="">
                 </div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Culpa, voluptatem fugiat sapiente sunt reprehenderit error dolorum 
-                 placeat similiqueoptio repellendus sint possimus tenetur deleniti id a vel totam voluptas dicta.
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Culpa, voluptatem fugiat sapiente sunt reprehenderit error dolorum 
+                    placeat similiqueoptio repellendus sint possimus tenetur deleniti id a vel totam voluptas dicta.
+               </p>
             </div>
 
 
             <div class="caja">
-                <a href=""><img src="img/project.png" alt="" width="300" height="200"></a>
-                <h4>PROYECTO</h4>
-                <H4>DD/MM/AAAA</H4>
+                <a href=""><img src="img/project.png" alt=""  width="160" height="100"></a>
+                <h4 class="titulo_proyecto">PROYECTO</h4>
+                <H4 class="fecha">DD/MM/AAAA</H4>
                 <div class="lenguajes">
                     <img src="img/lenguajes/icons8-html-48.png" alt="">
                     <img src="img/lenguajes/icons8-css-48.png" alt="">
                     <img src="img/lenguajes/icons8-javascript-48.png" alt="">
                 </div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Culpa, voluptatem fugiat sapiente sunt reprehenderit error dolorum 
-                 placeat similiqueoptio repellendus sint possimus tenetur deleniti id a vel totam voluptas dicta.
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Culpa, voluptatem fugiat sapiente sunt reprehenderit error dolorum 
+                    placeat  repellendus sint possimus tenetur deleniti id a vel totam voluptas dicta.
+               </p>
             </div>
 
 
             <div class="caja">
-                <a href=""><img src="img/project.png" alt="" width="300" height="200"></a>
-                <h4>PROYECTO</h4>
-                <H4>DD/MM/AAAA</H4>
+                <a href=""><img src="img/project.png" alt=""  width="160" height="100"></a>
+                <h4 class="titulo_proyecto">PROYECTO</h4>
+                <H4 class="fecha">DD/MM/AAAA</H4>
                 <div class="lenguajes">
                     <img src="img/lenguajes/icons8-html-48.png" alt="">
                     <img src="img/lenguajes/icons8-css-48.png" alt="">
                     <img src="img/lenguajes/icons8-javascript-48.png" alt="">
                 </div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Culpa, voluptatem fugiat sapiente sunt reprehenderit error dolorum 
-                 placeat similiqueoptio repellendus sint possimus tenetur deleniti id a vel totam voluptas dicta.
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Culpa, voluptatem fugiat sapiente sunt reprehenderit error dolorum 
+                    placeat  repellendus sint possimus tenetur deleniti id a vel totam voluptas dicta.
+               </p>
             </div>
 
             <div class="caja">
-                <a href=""><img src="img/project.png" alt="" width="300" height="200"></a>
-                <h4>PROYECTO</h4>
-                <H4>DD/MM/AAAA</H4>
+                <a href=""><img src="img/project.png" alt=""  width="160" height="100"></a>
+                <h4 class="titulo_proyecto">PROYECTO</h4>
+                <H4 class="fecha">DD/MM/AAAA</H4>
                 <div class="lenguajes">
                     <img src="img/lenguajes/icons8-html-48.png" alt="">
                     <img src="img/lenguajes/icons8-css-48.png" alt="">
                     <img src="img/lenguajes/icons8-javascript-48.png" alt="">
                 </div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Culpa, voluptatem fugiat sapiente sunt reprehenderit error dolorum 
-                 placeat similiqueoptio repellendus sint possimus tenetur deleniti id a vel totam voluptas dicta.
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Culpa, voluptatem fugiat sapiente sunt reprehenderit error dolorum 
+                    placeat similiqueoptio repellendus sint possimus tenetur deleniti id a vel totam voluptas dicta.
+               </p>
             </div>
 
 
             <div class="caja">
-                <a href=""><img src="img/project.png" alt="" width="300" height="200"></a>
-                <h4>PROYECTO</h4>
-                <H4>DD/MM/AAAA</H4>
+                <a href=""><img src="img/project.png" alt=""  width="160" height="100"></a>
+                <h4 class="titulo_proyecto">PROYECTO</h4>
+                <H4 class="fecha">DD/MM/AAAA</H4>
                 <div class="lenguajes">
                     <img src="img/lenguajes/icons8-html-48.png" alt="">
                     <img src="img/lenguajes/icons8-css-48.png" alt="">
                     <img src="img/lenguajes/icons8-javascript-48.png" alt="">
                 </div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Culpa, voluptatem fugiat sapiente sunt reprehenderit error dolorum 
-                 placeat similiqueoptio repellendus sint possimus tenetur deleniti id a vel totam voluptas dicta.
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Culpa, voluptatem fugiat sapiente sunt reprehenderit error dolorum 
+                    placeat similiqueoptio repellendus sint possimus tenetur deleniti id a vel totam voluptas dicta.
+               </p>
             </div>
 
 
@@ -176,8 +187,20 @@
 
 
     </section>
+    
 
 
+
+
+
+
+
+
+
+
+
+
+    
     <section class="contacto" id="contacto">
         <h2>¡Contacta <span>Conmigo!</span></h2>
         <form action="https://formsubmit.co/94c2f593714175c345164dcfd6a5807f " method="POST" class="formulario" >
@@ -215,14 +238,10 @@
     </footer>
 
 
-
-<script>
-    function redirigir(){
-        window.location.href="curriculum/cv.pdf";
-    }
-</script>
-
-
+    <script>
+        function redirigir(){
+            window.location.href="curriculum/cv.pdf";
+        }
+    </script>
 </body>
-
 </html>
