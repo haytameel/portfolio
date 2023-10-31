@@ -17,7 +17,6 @@
   border: none;
   scroll-behavior: smooth;
   background-color: #081b29;
-
 }
 
 a {
@@ -27,7 +26,9 @@ a {
   text-decoration: none;
 }
 
-
+body{
+  overflow-x:hidden;
+}
 
 li {
   list-style-type: none;
@@ -129,7 +130,6 @@ header{
 }
 
 h1 {
-  padding-top: 40px;
   font-size: 70px;
   margin: 10px;
   font-family: Rubik-bold, sans-serif;
@@ -331,7 +331,7 @@ p{
 
 /**/
 .contacto{
-  margin-top:180px ;
+  margin-top:100px ;
   height: 90vh;
   width: 100vw;
   justify-content: center;
@@ -344,7 +344,7 @@ p{
   padding-top: 40px;
   padding-bottom: 24px;
 }
-
+/*
 @media (max-width: 710px) {
   .contacto {
       padding-top: 800px;
@@ -361,6 +361,7 @@ p{
       margin-top: 600px;
   }
 }
+*/
 
 
 
@@ -389,17 +390,7 @@ textarea{
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
+div::-webkit-scrollbar{ display:none;}
 
 footer{
   text-align: center;
