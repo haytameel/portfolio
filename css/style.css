@@ -134,9 +134,9 @@ h1 {
   margin: 10px;
   font-family: Rubik-bold, sans-serif;
   text-align: center;
-
-
 }
+
+
 
 /*TITULOS*/
 h2 {
@@ -209,6 +209,33 @@ p{
   color: #ffffffd5;
 }
 
+
+
+@media (max-width: 410px) {
+  h1{
+    font-size: 50px;
+    padding-top: -10;
+  }
+
+  h3{
+    font-size: 22px;
+  }
+  p{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 280px) {
+  h1{
+    font-size: 30px;
+  }
+  h3{
+    font-size: 18px;
+  }
+  p{
+    font-size: 12px;
+  }
+}
 
 
 /*SOBRE MI*/
@@ -324,6 +351,24 @@ p{
 .caja img{
   width:160 ;
   height:200;
+}
+
+
+@media (max-width: 450px) {
+  .projects p{
+    font-size: 12px;
+  }
+  h4{
+    font-size: 14px;
+  }
+}
+@media (max-width: 360px) {
+  .projects p{
+    font-size: 8px;
+  }
+  h4{
+    font-size: 10px;
+  }
 }
 
 
