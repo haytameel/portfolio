@@ -268,6 +268,11 @@ p{
       max-width: 90%;
   }
 }
+@media (max-width: 450px) {
+  .sobre-mi p {
+      font-size: 14px;
+  }
+}
 
 
 
@@ -356,7 +361,7 @@ p{
 
 @media (max-width: 450px) {
   .projects p{
-    font-size: 12px;
+    font-size: 13px;
   }
   h4{
     font-size: 14px;
