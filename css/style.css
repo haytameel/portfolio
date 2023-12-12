@@ -369,10 +369,10 @@ p{
 }
 @media (max-width: 360px) {
   .projects p{
-    font-size: 8px;
+    font-size: 10px;
   }
   h4{
-    font-size: 10px;
+    font-size: 11px;
   }
 }
 
