@@ -320,58 +320,71 @@ p{
 
 
 /*PROYECTOS*/
-.proyectos{
+.proyectos {
   width: 100vw;
-  height: 90vh;
+  height: auto; /* Ajusta la altura automáticamente según el contenido */
   padding-top: 120px;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  margin: auto;
+  justify-content: flex-start;
   text-align: center;
-  display: block;
-  flex-direction: row;
+  margin: auto;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-right: 15px;
+  margin-top: 40px; /* Espacio entre el título y las cajitas */
+  padding: 4px 25px 4px 10px ;
 
 }
-.projects{
-  align-items: center;
 
-}
-.projects .caja{
-  display: inline-block;
-  max-width: 30%;
-  margin: 5px;
-  margin-bottom: 40px;
-  border: #00abf0 6px solid ;
+.projects .caja {
+  flex: 1 1 calc(33.33% - 20px); /* Tres columnas en pantallas grandes */
+  margin: 10px;
+  border: #00abf0 5px solid;
   border-radius: 10px;
-
-
-  
+  box-sizing: border-box; /* Incluye el padding y border en el tamaño total */
 }
-.caja img{
+
+.caja img {
   padding-top: 10px;
   max-width: 80%; /* Ancho máximo permitido para la imagen (se ajusta al ancho del contenedor) */
   height: auto;
 }
 
-.caja img{
-  width:160 ;
-  height:200;
+ /* Dos columnas en pantallas medianas */
+@media (max-width: 1200px) {
+  .projects .caja {
+    flex: 1 1 calc(45% - 20px);
+  }
+}
+/* Una columna en pantallas pequeñas */
+@media (max-width: 768px) {
+  .projects .caja {
+    flex: 1 1 calc(100% - 20px); 
+  }
 }
 
-
 @media (max-width: 450px) {
-  .projects p{
+  .projects p {
     font-size: 13px;
   }
-  h4{
+  h4 {
     font-size: 14px;
   }
 }
+
 @media (max-width: 360px) {
-  .projects p{
+  .projects p {
     font-size: 10px;
   }
-  h4{
+  h4 {
     font-size: 11px;
   }
 }
