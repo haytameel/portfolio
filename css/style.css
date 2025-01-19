@@ -305,7 +305,7 @@ p{
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #081b298f;
+  background-color: #081b2938;
   transition: width 0.6s ease-in-out;
 }
 
@@ -322,7 +322,7 @@ p{
 /*PROYECTOS*/
 .proyectos {
   width: 100vw;
-  height: auto; /* Ajusta la altura automáticamente según el contenido */
+  height: auto; 
   padding-top: 120px;
   display: flex;
   flex-direction: column;
@@ -335,41 +335,48 @@ p{
 .projects {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   flex-wrap: wrap;
+  gap: 20px; /* Espacia uniforme entre las cajas */
   width: 100%;
-  padding-right: 15px;
-  margin-top: 40px; /* Espacio entre el título y las cajitas */
-  padding: 4px 25px 4px 10px ;
-
+  margin-top: 40px;
+  align-items: stretch; /* con esto aseguramos que todas las cajas tengan la misma altura */
 }
 
+
 .projects .caja {
-  flex: 1 1 calc(33.33% - 20px); /* Tres columnas en pantallas grandes */
+  flex: 1 1 30%; /* tres columnas en pantallas grandes */
+  min-width: 300px; /* tamaño mínimo para evitar que se reduzcan demasiado */
+  max-width: 450px; /* tamaño max para que no se hagan muy grandes */
   margin: 10px;
   border: #00abf0 5px solid;
   border-radius: 10px;
-  box-sizing: border-box; /* Incluye el padding y border en el tamaño total */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
 }
 
 .caja img {
   padding-top: 10px;
-  max-width: 80%; /* Ancho máximo permitido para la imagen (se ajusta al ancho del contenedor) */
+  max-width: 80%; 
   height: auto;
 }
+.caja p{
+  background-color: #00acf02b;
+padding: 10px;
+}
 
- /* Dos columnas en pantallas medianas */
 @media (max-width: 1200px) {
   .projects .caja {
-    flex: 1 1 calc(45% - 20px);
+    flex: 1 1 45%; /* Dos columnas para pantallas medianas */
   }
 }
-/* Una columna en pantallas pequeñas */
 @media (max-width: 768px) {
   .projects .caja {
-    flex: 1 1 calc(100% - 20px); 
+    flex: 1 1 100%; /* Una columna para pantallas pequeñas */
   }
 }
+
 
 @media (max-width: 450px) {
   .projects p {
