@@ -268,7 +268,7 @@ p{
       max-width: 90%;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 850px) {
   .sobre-mi p {
       font-size: 14px;
   }
@@ -321,7 +321,7 @@ p{
 
 /*PROYECTOS*/
 .proyectos {
-  width: 100vw;
+  width: 100%; /*IMPORTANTE, si uso 100vw tiene en cuenta la barra de desplazamiento*/
   height: auto; 
   padding-top: 120px;
   display: flex;
@@ -329,8 +329,8 @@ p{
   align-items: center;
   justify-content: flex-start;
   text-align: center;
-  margin: auto;
 }
+
 
 .projects {
   display: flex;
@@ -344,17 +344,16 @@ p{
 
 
 .projects .caja {
-  flex: 1 1 30%; /* tres columnas en pantallas grandes */
-  min-width: 300px; /* tamaño mínimo para evitar que se reduzcan demasiado */
-  max-width: 450px; /* tamaño max para que no se hagan muy grandes */
-  margin: 10px;
+  min-width: 300px;
+  max-width: 450px;
   border: #00abf0 5px solid;
   border-radius: 10px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column; 
-  justify-content: space-between; 
+  justify-content: space-between;
 }
+
 
 .caja img {
   padding-top: 10px;
